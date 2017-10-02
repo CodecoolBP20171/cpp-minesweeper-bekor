@@ -22,16 +22,27 @@ namespace {
         }
 
         void countNeighbours() {
-            // step 2 goes here
         }
 
         void printTable() const {
-            // step 3 goes here
+            for(int i = 0; i < height; ++i){
+                for(int j = 0; j < width; ++j){
+                    std::cout << table[(i*width) + j] << " ";
+                }
+                std::cout << std::endl;
+            }
+            std::cout << std::endl;
         }
 
     private:
         void fillTable() {
-            // step 1 goes here
+            int random = 0;
+            for(int i = 0; i < height; ++i){
+                for(int j = 0; j < width; ++j){
+                    random = rand() % 100;
+                    *(table+ (i*width) + j) = (random > 80) ? '*' : '.';
+                }
+            }
         }
 
         const size_t width, height;
@@ -41,7 +52,7 @@ namespace {
 
 int main() {
     try {
-        Minesweeper ms(100, 50);
+        Minesweeper ms(10, 5);
         ms.printTable();
         ms.countNeighbours();
         ms.printTable();
