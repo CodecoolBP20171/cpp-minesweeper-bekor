@@ -7,6 +7,9 @@
 # User-specific stuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
+.idea/**/vcs.xml
+.idea/**/misc.xml
+.idea/**/.name
 .idea/dictionaries
 
 # Sensitive or high-churn files:
