@@ -11,6 +11,6 @@ set(SOURCE_FILES
         .idea/workspace.xml
         .gitignore
         CMakeLists.txt
-        main.cpp)
+        main.cpp Mindsweeper.cpp Mindsweeper.h)
 
 add_executable(cpp_minesweeper_bekor ${SOURCE_FILES})
